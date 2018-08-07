@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2">
+    <link rel="preload" href="fonts/opensansbold.woff2">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Вязание на заказ</title>
+</head>
+<body>
+
+    <div style="display:none">
+        <include src="build/img/sprite.svg">"</include>
+    </div>
+
+    <div class="wrapper">
+        <div class="header">
+            <div class="header__logo-mobile-wrap">
+                <a class="header__logo-mobile" href="index.html">
+                    <img class="header__logo-mobile__img" src="img/logo-mobile.svg" alt="Логотип">
+                </a>
+            </div>
+
+            <div class="header__top">
+                <button class="header__hamburger" type="button">
+                    <span class="header__hamburger-icon"></span>
+                </button>
+
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="catalog.html" class="menu__link"><span class="menu__text">Каталог товаров</span></a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="form.html" class="menu__link"><span class="menu__text">Вязание на заказ</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header__logo logo" href="index.html">
+                    <picture>
+                        <source media="(min-width: 1150px)"
+                                srcset="img/logo-desktop.svg">
+                        <img class="logo__img"
+                             src="img/logo-tablet.svg"
+                             alt="Логотип">
+                    </picture>
+                </a>
+                <div class="header__controls">
+                    <button class="header__search search" type="button">
+                        <span class="search__wrap">
+                            <span class="search__icon-wrap">
+                                <svg class="search__icon">
+                                    <use xlink:href="#sprite-icon-search"></use>
+                                </svg>
+                            </span>
+                            <span class="search__text">Поиск по сайту</span>
+                        </span>
+                    </button>
+                    <button class="header__basket basket" type="button">
+                        <span class="basket__text">
+                            <span class="basket__icon-wrap">
+                                <svg class="basket__icon">
+                                    <use xlink:href="#sprite-icon-cart"></use>
+                                </svg>
+                            </span>
+
+                            Корзина: <span class="basket__status">пока пуста</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="header__bottom">
+                <nav class="menu menu--bottom">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="catalog.html" class="menu__link"><span class="menu__text">Каталог товаров</span></a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="form.html" class="menu__link"><span class="menu__text">Вязание на заказ</span></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#link" class="header__link">Новые поступления</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#link" class="header__link">Распродажа</a>
+                    </li>
+                </ul>
+
+                <div class="header__info">Бесплатная доставка по России</div>
+            </div>
+
+
+        </div>
+        <main class="main">
+            <div class="order">
+                <div class="order__top">
+                    <h2 class="order__title title">Вязание на заказ</h2>
+                </div>
+
+                <div class="order__info">
+                    <div class="container">
+                        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
+                        и мы свяжемся с вами, чтобы уточнить детали.
+                    </div>
+                </div>
+                <form class="order__form form" action="main.php">
+                    <section class="form__section">
+                        <div class="form__section-container container">
+                            <h3 class="form__section-title">Тип</h3>
+                            <ul class="form__list">
+                                <li class="form__program-options form__program-options--margin">
+                                    <input class="form__input visually-hidden" type="radio" id="type1" name="type">
+                                    <label class="form__label form__label--radio" for="type1">Аксессуар для интерьера</label>
+                                </li>
+                                <li class="form__program-options form__program-options--margin">
+                                    <input class="form__input visually-hidden" type="radio" id="type2" name="type">
+                                    <label class="form__label form__label--radio" for="type2">Детская игрушка</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="form__section form__section--bg--gray">
+                        <div class="form__section-container container">
+                            <h3 class="form__section-title">Цвет</h3>
+                            <ul class="form__list form__list-check">
+                                <li class="form__program-options form__program-options-check">
+                                    <input class="form__input visually-hidden" type="checkbox" id="color1" name="color" value="white">
+                                    <label class="form__label form__label--check" for="color1">Белый</label>
+                                </li>
+                                <li class="form__program-options form__program-options-check">
+                                    <input class="form__input visually-hidden" type="checkbox" id="color2" name="color" value="gray">
+                                    <label class="form__label form__label--check" for="color2">Серый</label>
+                                </li>
+                                <li class="form__program-options form__program-options-check">
+                                    <input class="form__input visually-hidden" type="checkbox" id="color3" name="color" value="white">
+                                    <label class="form__label form__label--check" for="color3">«Тиффани»</label>
+                                </li>
+                                <li class="form__program-options form__program-options-check">
+                                    <input class="form__input visually-hidden" type="checkbox" id="color4" name="color" value="white">
+                                    <label class="form__label form__label--check" for="color4">Черный</label>
+                                </li>
+                                <li class="form__program-options form__program-options-check">
+                                    <input class="form__input visually-hidden" type="checkbox" id="color5" name="color" value="white">
+                                    <label class="form__label form__label--check" for="color5">Розовый</label>
+                                </li>
+                                <li class="form__program-options form__program-options-check">
+                                    <input class="form__input visually-hidden" type="checkbox" id="color6" name="color" value="white">
+                                    <label class="form__label form__label--check" for="color6">Оранжевый</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="form__section">
+                        <div class="form__section-container container">
+                            <h3 class="form__section-title">ФИО</h3>
+                            <ul class="form__list">
+                                <li class="form__program-options form__program-options-fio">
+                                    <label class="form__label" for="name">Имя:</label>
+                                    <input class="form__input form__input" type="text" id="name" placeholder="Введите ваше имя*" required>
+                                </li>
+                                <li class="form__program-options form__program-options-fio">
+                                    <label class="form__label" for="name2">Фамилия:</label>
+                                    <input class="form__input" type="text" id="name2" placeholder="Укажите фамилию*" required>
+                                </li>
+                                <li class="form__program-options form__program-options-fio">
+                                    <label class="form__label" for="name3">Отчество:</label>
+                                    <input class="form__input" type="text" id="name3" placeholder="Отчество, если желаете">
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="form__section form__section--bg--gray">
+                        <div class="form__section-container container">
+                            <h3 class="form__section-title form__section-title--no-margin">Тел</h3>
+                            <div class="form__input-wrap form__input-wrap--tel">
+                                <input class="form__input form__input-tel form__input--bg--gray" type="tel" id="tel" placeholder="+7 XXX XXX*" required>
+                                <div class="form__icon-wrap">
+                                    <svg class="form__icon">
+                                        <use xlink:href="#sprite-icon-phone"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form__section-container container">
+                            <h3 class="form__section-title form__section-title--no-margin">E-mail</h3>
+                            <div class="form__input-wrap form__input-wrap--email">
+                                <input class="form__input form__input-email form__input--bg--gray" type="email" id="email" placeholder="Ваш E-mail*" required>
+                                <div class="form__icon-wrap">
+                                    <svg class="form__icon">
+                                        <use xlink:href="#sprite-icon-mail"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="form__section">
+                        <div class="form__section-container container">
+                            <h3 class="form__section-title">Доп</h3>
+                            <textarea class="form__textarea" name="wishes" title="Поле для описания ваших пожеланий к заказу" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+
+                        </div>
+
+                        <div class="form__submit-wrap">
+                            <div class="form__submit-wrap-container container">
+                                <button class="form__submit btn" type="submit">Отправить заказ</button>
+                                <div class="form__info">*Поля обязательны для заполнения</div>
+                            </div>
+                        </div>
+                    </section>
+                </form>
+            </div>
+        </main>
+        <div class="footer">
+            <div class="footer__container container">
+                <a href="index.html" class="footer__logo">
+                    <svg class="footer__logo-icon">
+                        <use xlink:href="#sprite-logo-footer"></use>
+                    </svg>
+                </a>
+                <ul class="social">
+                    <li class="social__item">
+                        <a href="#link" class="social__link" target="_blank" rel="noopener">
+                            <span class="visually-hidden">Инстаграм</span>
+                            <svg class="social__icon social__icon--inst">
+                                <use xlink:href="#sprite-icon-insta"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#link" class="social__link" target="_blank" rel="noopener">
+                            <span class="visually-hidden">Facebook</span>
+                            <svg class="social__icon social__icon--fb">
+                                <use xlink:href="#sprite-icon-fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#link" class="social__link" target="_blank" rel="noopener">
+                            <span class="visually-hidden">Twitter</span>
+                            <svg class="social__icon social__icon--twitter">
+                                <use xlink:href="#sprite-icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#link" class="footer__copyright copyright" target="_blank" rel="noopener">
+                    <span class="copyright__text">Разработано</span>
+                    <svg class="copyright__icon">
+                        <use xlink:href="#sprite-logo-htmlacademy"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

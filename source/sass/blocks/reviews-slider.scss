@@ -1,0 +1,133 @@
+.reviews-slider {
+
+}
+
+.reviews-slider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  margin-bottom: 36px;
+
+  font-family: "opensans", Arial, sans-serif;
+  font-size: 15px;
+
+}
+
+.reviews-slider__review {
+  margin-bottom: 27px;
+  line-height: 2;
+}
+
+.reviews-slider__author-name {
+  font-weight: bold;
+  font-size: 17px;
+
+  margin-bottom: 9px;
+}
+
+.reviews-slider__author-nickname {
+  font-size: 17px;
+  line-height: 1;
+
+}
+
+.reviews-slider__controls {
+  display: flex;
+
+  margin-bottom: 40px;
+}
+
+.reviews-slider__control {
+  width: 50%;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid $gray;
+  cursor: pointer;
+
+  position: relative;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50px 26px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active, &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.reviews-slider__control--left {
+  background-image: url("../img/icon-left-arrow.svg");
+}
+
+.reviews-slider__control--right {
+  background-image: url("../img/icon-right-arrow.svg");
+}
+
+.reviews-slider__button {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews-slider {
+    position: relative;
+  }
+
+  .reviews-slider__list {
+    margin-bottom: 0;
+  }
+
+  .reviews-slider__review {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 58px;
+  }
+
+  .reviews-slider__author {
+    width: 40%;
+    display: inline-block;
+  }
+
+  .reviews-slider__author-name {
+    font-size: 18px;
+    letter-spacing: 0.2px;
+  }
+
+  .reviews-slider__controls {
+    position: absolute;
+    width: 171px;
+    margin-bottom: 0;
+
+    bottom: 0;
+    right: 0;
+  }
+
+  .reviews-slider__control {
+    border: none;
+    padding: 0;
+  }
+
+  .reviews-slider__button {
+
+    position: absolute;
+    width: 176px;
+
+    bottom: calc(100% + 44px);
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews-slider__review {
+    margin-bottom: 38px;
+    padding-right: 90px;
+  }
+
+  slider__author-name {
+    font-size: 17px;
+  }
+}

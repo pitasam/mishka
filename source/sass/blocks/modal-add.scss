@@ -1,0 +1,104 @@
+.modal-add {
+  width: 570px;
+  padding: 48px 108px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 6px 10px rgba(0,0,0,.25);
+  display: none;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-add__title {
+  margin-bottom: 28px;
+
+  font-family: "opensans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: $font-color;
+  text-transform: uppercase;
+}
+
+.modal-add__desc {
+  margin-bottom: 25px;
+
+  font-family: "opensans", Arial, sans-serif;
+  font-size: 17px;
+  color: $font-color;
+}
+
+.modal-add__content {
+  margin-bottom: 28px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-add__label {
+  &::after {
+    display: block;
+    border: 1px solid $gray-light;
+    padding: 20px 48px;
+    font-family: "opensans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: $font-color;
+
+    cursor: pointer;
+  }
+}
+
+.modal-add__label--s {
+    &::after {
+      content: "s";
+    }
+}
+.modal-add__label--m {
+    &::after {
+      content: "m";
+    }
+}
+.modal-add__label--l {
+    &::after {
+      content: "l";
+    }
+}
+
+.modal-add__radio:checked + .modal-add__label::after {
+  border-color: $base-color;
+}
+
+.modal-add__send {
+
+  border: none;
+  display: inline-block;
+
+  padding: 15px;
+  width: 100%;
+
+  font-family: "opensans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $base-color;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #41b3a1;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: #41b3a1;
+  }
+
+  &:active {
+    color: rgba(255,255,255,.3)
+  }
+}

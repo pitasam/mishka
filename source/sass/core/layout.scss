@@ -1,0 +1,115 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif ;
+  font-size: 14px;
+  color: $font-color;
+  line-height: 1.42;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+picture {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.wrapper {
+  min-width: 320px;
+  overflow: hidden;
+}
+
+.container {
+  width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 668px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1050px;
+  }
+}
+
+.title {
+  margin: 0;
+
+  font-family: 'opensans', 'Arial', sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+  color: $font-color;
+  letter-spacing: 0.2px;
+
+  line-height: 1;
+}
+
+.subtitle {
+  margin: 0;
+
+  font-family: 'opensans', 'Arial', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: $font-color;
+
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+
+  padding: 13px 23px 12px;
+
+  text-align: center;
+  font-family: 'opensans', 'Arial', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: $font-color-light;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 2px solid $font-color-light;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $font-color-light;
+    color: white;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: $font-color-light;
+    color: white;
+  }
+
+  &:active {
+    background-color: $font-color-light;
+    color: rgba(255, 255, 255, .3);
+  }
+}
+
+

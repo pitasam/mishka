@@ -1,0 +1,42 @@
+.copyright {
+  text-decoration: none;
+  color: #000000;
+  display: inline-flex;
+  align-items: center;
+
+  padding-top: 28px;
+  padding-bottom: 22px;
+
+  &:hover {
+    .copyright__icon {
+      fill: $base-color;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    fill: $base-color;
+  }
+
+  &:active, &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  margin-right: 27px;
+  margin-top: -5px;
+
+  font-family: "opensans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  color: $font-color;
+
+}
+
+.copyright__icon {
+  width: 27px;
+  height: 34px;
+  fill: $base-color-light;
+
+}

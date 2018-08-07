@@ -1,0 +1,48 @@
+//colors
+$font-color: #000000;
+$font-color-light: #444444;
+
+$gray-light: #f1f1f1;
+$gray-medium: #e5e5e5;
+$gray: #ececec;
+
+$base-color: #46c1ae;
+$base-color-light: #63d1bb;
+$base-color-medium: #62d1ba;
+$base-color-dark: #56c3b2;
+
+//size
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
+//retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+
+//settings
+@import "core/fonts";
+@import "core/layout";
+
+//blocks
+@import "blocks/footer";
+@import "blocks/social";
+@import "blocks/copyright";
+@import "blocks/catalog";
+@import "blocks/goods";
+@import "blocks/show";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/menu";
+@import "blocks/order";
+@import "blocks/form";
+@import "blocks/mishka";
+@import "blocks/category-nav";
+@import "blocks/good-demo";
+@import "blocks/about";
+@import "blocks/reviews-slider";
+@import "blocks/reviews";
+@import "blocks/contacts";
+@import "blocks/search";
+@import "blocks/basket";
+@import "blocks/modal-add";
